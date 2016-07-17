@@ -12,6 +12,7 @@ require 'rspec'
 require 'rack/test'
 require 'minimo'
 require 'pry'
+require 'json'
 
 RSpec.configure do |config|
   config.include Rack::Test::Methods
