@@ -1,7 +1,9 @@
 minimo
 -------
 
+[![Gem Version](https://badge.fury.io/rb/minimo.svg)](https://badge.fury.io/rb/minimo)
 [![Build Status](https://travis-ci.org/kazu69/minimo.svg?branch=master)](https://travis-ci.org/kazu69/minimo)
+[![Code Climate](https://codeclimate.com/github/kazu69/minimo/badges/gpa.svg)](https://codeclimate.com/github/kazu69/minimo)
 
 > Mini Mock server
 > Rack based REST corresponding server
