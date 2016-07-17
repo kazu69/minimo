@@ -1,7 +1,6 @@
 libdir = File.dirname(File.dirname(__FILE__)) + '../lib'
 $LOAD_PATH.unshift libdir unless $LOAD_PATH.include?(libdir)
 
-require 'simplecov'
 unless ENV['CI']
   require 'simplecov'
   SimpleCov.start do

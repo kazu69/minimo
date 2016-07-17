@@ -68,12 +68,12 @@ describe Minimo::Base do
   end
 
   describe '#fixture_path' do
-    it 'returns fixture file path' do
+    it 'returns response file path' do
       stub = Rack::Request.new({"PATH_INFO" => "/mock/",})
       app.instance_variable_set(:@request, stub)
-      expect(app.send(:fixture_path, 'GET')).to eq './fixture/GET/mock'
-      expect(app.send(:fixture_path, 'HEAD')).to eq './fixture/GET/mock'
-      expect(app.send(:fixture_path, 'POST')).to eq './fixture/POST/mock'
+      expect(app.send(:fixture_path, 'GET')).to eq './response/GET/mock'
+      expect(app.send(:fixture_path, 'HEAD')).to eq './response/GET/mock'
+      expect(app.send(:fixture_path, 'POST')).to eq './response/POST/mock'
     end
   end
 

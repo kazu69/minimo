@@ -33,5 +33,6 @@ minimo is the server to mock a minimum of http response using the rack.'
   spec.add_development_dependency 'bundler', '~> 1.12'
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec'
+  spec.add_development_dependency 'simplecov'
   spec.add_development_dependency 'rack-test'
 end

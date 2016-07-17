@@ -1,6 +1,8 @@
 minimo
 -------
 
+[![Build Status](https://travis-ci.org/kazu69/minimo.svg?branch=master)](https://travis-ci.org/kazu69/minimo)
+
 > Mini Mock server
 > Rack based REST corresponding server
 
@@ -43,7 +45,7 @@ set :log_dir, File.dirname( __FILE__ ) + '/log'
 # set http header
 set :headers, { 'Vary' => 'Accept-Encoding' }
 
-Rack::Handler::WEBrick.run minimo::Application, Port: 9292
+Rack::Handler::WEBrick.run minimo::Application, Host: '0.0.0.0', Port: 9292
 ```
 
 And run the POST method.
