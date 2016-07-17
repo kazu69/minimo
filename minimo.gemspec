@@ -9,19 +9,19 @@ Gem::Specification.new do |spec|
   spec.authors       = ['kazu69']
   spec.email         = ['kazu.69.web+minimo@gmail.com']
 
-  spec.summary       = 'Minimum Http response mocking server'
+  spec.summary       = 'Mini Http response mocking server'
   spec.description   = '
-Minimo is the server to mock a minimum of http response using the rack.'
+minimo is the server to mock a minimum of http response using the rack.'
   spec.homepage      = 'https://github.com/kazu69/minimo'
   spec.license       = 'MIT'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
-  if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = ''
-  else
-    raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
-  end
+  # if spec.respond_to?(:metadata)
+  #   spec.metadata['allowed_push_host'] = ''
+  # else
+  #   raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
+  # end
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
